@@ -967,6 +967,12 @@ PIPELINE_JS = {
         ),
         'output_filename': 'js/site-bundle.js',
     },
+    'oldie-nojs': {
+        'source_filenames': (
+            'js/base/oldie-nojs.js',
+        ),
+        'output_filename': 'js/oldie-nojs-bundle.js',
+    },
     'projects-calendar': {
         'source_filenames': (
             'js/mozorg/calendar.js',

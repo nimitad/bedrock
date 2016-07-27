@@ -452,8 +452,11 @@ def new(request):
         'version': 'none',
     }
 
+    # version used for either animation (1) or IE 8 no-js (2)
+    v = request.GET.get('v', '')
+
     # animation triggered for ?v=1 via data attribute in template
-    if request.GET.get('v', '') == '1':
+    if v == '1':
         context['version'] = '1'
 
     if scene == '2':
@@ -464,6 +467,9 @@ def new(request):
     # if no/incorrect scene specified, show scene 1
     else:
         if lang_file_is_active('firefox/new/horizon', l10n_utils.get_locale(request)):
+            if v == '2':
+                template = 'firefox/new/horizon/scene1-ie8.html'
+            else:
                 template = 'firefox/new/horizon/scene1.html'
         else:
             template = 'firefox/new/scene1.html'
