@@ -1,0 +1,9 @@
+FROM bedrock_dev
+
+CMD ["docker/run-supervisor.sh"]
+
+COPY . ./
+RUN ./manage.py collectstatic -lv 0 --noinput
+RUN ./docker/bin/softlinkstatic.py
+
+RUN chown webdev.webdev -R .
