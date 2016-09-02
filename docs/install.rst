@@ -79,6 +79,10 @@ activated, so running the tests is as simple as::
 
     $ py.test lib bedrock
 
+To test a single app, specify the app by name in the command above. e.g.::
+
+    $ py.test lib bedrock/firefox
+
 .. note::
 
     If your local tests run fine, but when you submit a pull-request the tests fail in
