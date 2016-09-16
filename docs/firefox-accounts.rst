@@ -39,6 +39,7 @@ Local Development
         user_pref("identity.fxaccounts.settings.uri", "https://stomlinson.dev.lcip.org/settings");
         user_pref("identity.fxaccounts.remote.webchannel.uri", "https://stomlinson.dev.lcip.org/");
         user_pref("services.sync.tokenServerURI", "https://stomlinson.dev.lcip.org/syncserver/token/1.0/sync/1.5");
+        user_pref("webchannel.allowObject.urlWhitelist", "https://accounts.firefox.com https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org https://stomlinson.dev.lcip.org/");
 
         user_pref("general.warnOnAboutConfig", false);
         user_pref("devtools.chrome.enabled", true);
