@@ -25,7 +25,7 @@ PIPELINE_CSS = {
     'about-leadership': {
         'source_filenames': (
             'css/newsletter/moznewsletter-subscribe.less',
-            'css/mozorg/leadership.less',
+            'css/mozorg/leadership.scss',
         ),
         'output_filename': 'css/about-leadership-bundle.css',
     },
@@ -120,8 +120,7 @@ PIPELINE_CSS = {
     },
     'pebbles': {
         'source_filenames': (
-            'css/pebbles/base.less',
-            'css/tabzilla/tabzilla-static.less',
+            'css/pebbles/global.scss',
         ),
         'output_filename': 'css/pebbles-bundle.css',
     },
@@ -133,7 +132,7 @@ PIPELINE_CSS = {
     },
     'oldIE-pebbles': {
         'source_filenames': (
-            'css/pebbles/oldIE.less',
+            'css/pebbles/base/oldIE.scss',
         ),
         'output_filename': 'css/oldIE-pebbles-bundle.css',
     },
@@ -145,13 +144,13 @@ PIPELINE_CSS = {
     },
     'newsletter-mozilla': {
         'source_filenames': (
-            'css/newsletter/newsletter-mozilla.less',
+            'css/newsletter/newsletter-mozilla.scss',
         ),
         'output_filename': 'css/newsletter-mozilla-bundle.css',
     },
     'newsletter-firefox': {
         'source_filenames': (
-            'css/newsletter/newsletter-firefox.less',
+            'css/newsletter/newsletter-firefox.scss',
         ),
         'output_filename': 'css/newsletter-firefox-bundle.css',
     },
@@ -621,9 +620,9 @@ PIPELINE_CSS = {
     'home': {
         'source_filenames': (
             'css/newsletter/moznewsletter-subscribe.less',
-            'css/mozorg/home/home.less',
+            'css/mozorg/home/home.scss',
         ),
-        'output_filename': 'css/home-bundle.css',
+        'output_filename': 'css/home.css',
     },
     'legal': {
         'source_filenames': (
